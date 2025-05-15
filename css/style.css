@@ -344,7 +344,7 @@ p {
 /* Друга секція */
 .features-list {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   gap: 24px;
 }
 
@@ -381,6 +381,22 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+/* svg іконки другої секції */
+.features-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border: 1px solid #8e8f99; /* Тонка рамка (якщо потрібно) */
+}
+
+.feature-svg-image {
+  fill: #2e2f42;
 }
 
 /* Портфоліо */
