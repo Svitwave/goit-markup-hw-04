@@ -172,8 +172,9 @@ p {
   color: #4d5ae5;
 }
 
-.logo-studio {
+.logo-studio-header {
   color: #2e2f42;
+  font-size: 18px;
 }
 
 /* Хедер */
@@ -295,7 +296,7 @@ p {
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
-  transition: background-color 250ms ease-in-out;
+  /* transition: background-color 250ms ease-in-out; */
 }
 .team-socials li {
   background-color: transparent;
@@ -303,7 +304,7 @@ p {
 }
 
 .team-socials-icon {
-  fill: none;
+  fill: var(--cloud);
 }
 
 .team-socials-link:hover,
