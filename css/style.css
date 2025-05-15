@@ -477,12 +477,16 @@ p {
 }
 .footer-socials {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-
   gap: 12px;
 }
 .footer-social-media {
-  width: 208px;
-  height: 80px;
-  gap: 16px; /* якщо потрібен spacing між елементами */
+  margin-left: 136px;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  left: 556px;
+  top: 3240px;
 }
