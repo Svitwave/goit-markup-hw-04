@@ -46,12 +46,6 @@ ol {
   letter-spacing: inherit;
 }
 
-/* button:hover,
-button:focus {
-  background-color: var(--ocean);
-  color: var(--white);
-} */
-
 img {
   display: block;
   max-width: 100%;
@@ -212,12 +206,14 @@ p {
 .nav-link-active:focus {
   color: #404bbf;
 }
+
 /* головна навігація studio */
 .nav-link-active {
   color: #404bbf;
   position: relative;
   padding: 24px 0; /* Таке ж значення, як у звичайних посилань */
 }
+
 .nav-link-active::after {
   content: "";
   position: absolute;
@@ -299,13 +295,6 @@ p {
   overflow: hidden;
 }
 
-/* .team-card-first-card {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0 0 4px 4px;
-  background-color: #ffffff;
-} */
-
 .name-team {
   padding: 32px 0;
 }
@@ -316,7 +305,6 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* padding: 24px 0; */
 }
 
 .team-socials__item {
@@ -330,7 +318,7 @@ p {
   align-items: center;
   width: 100%;
   height: 100%;
-  /* height: 40px; */
+
   background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -353,6 +341,11 @@ p {
   background-color: #404bbf;
 }
 
+/* Картка команди */
+.team-card {
+  background-color: #fff;
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -362,13 +355,9 @@ p {
   color: var(--navyblue);
   margin-bottom: 72px;
 }
-/* Картка команди */
-.team-card {
-  background-color: #fff;
-}
 
+/* Сховати елемент з екрану */
 .visually-hidden {
-  /* Сховати елемент з екрану */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -384,7 +373,6 @@ p {
 /* Друга секція */
 .features-list {
   display: flex;
-  /* flex-direction: row; */
   gap: 24px;
 }
 
@@ -394,7 +382,6 @@ p {
 
 .features-list li {
   flex-basis: calc((100% - 3 * 24px) / 4);
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .features-title {
@@ -422,6 +409,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 /* svg іконки другої секції */
 .features-icon-box {
   display: flex;
@@ -440,7 +428,7 @@ p {
 }
 
 /* Портфоліо */
-/* Portfolio Section Styles */
+
 .portfolio-section {
   font-size: 20px;
   line-height: 1.2;
@@ -471,7 +459,6 @@ p {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  /* margin-bottom: 8px; */
 }
 
 .portfolio-list {
@@ -484,6 +471,8 @@ p {
   margin: 0;
   row-gap: 48px;
 }
+
+/* Portfolio Section Styles */
 
 .portfolio-list li {
   width: calc((100% - 48px) / 3);
