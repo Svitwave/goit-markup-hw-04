@@ -292,7 +292,8 @@ p {
 .team-list li {
   width: calc((100% - 72px) / 4);
   background-color: #fff;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  box-shadow зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+  /* box-shadow: 0 2px 8px rgb(0 0 0 / 10%); */
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   overflow: hidden;
@@ -300,8 +301,8 @@ p {
 }
 
 .team-card-first-card {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
 }
@@ -436,31 +437,71 @@ p {
 /* Портфоліо */
 /* Portfolio Section Styles */
 .portfolio-section {
-  padding: 120px 0;
-  background-color: #ffffff;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+
+  /* padding-left: 15px; */
+}
+
+.portfolio-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  padding-left: 15px;
+  margin-bottom: 8px;
+}
+
+.portfolio-title-first {
+  margin-bottom: 8px;
+}
+
+.portfolio-div {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  /* margin-bottom: 8px; */
 }
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
+  flex-wrap: wrap; /* ← Щоб переходило на наступний ряд */
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
+  row-gap: 48px;
 }
 
-.portfolio-item {
+.portfolio-list li {
   width: calc((100% - 48px) / 3);
+  background-color: #fff;
+  box-shadow: 0px 1px 6px rgba(46, 239, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative; /* Важливо! */
+  overflow: hidden; /* Обрізає оверлей */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-item:hover {
+/* оверлай */
+.portfolio-list li:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transform: translateY(0%);
+}
+.portfolio-image-container:hover .portfolio-overlay {
+  transform: translateY(0);
 }
 
-.portfolio-img-container {
+
+.portfolio-image-container {
   position: relative;
   overflow: hidden;
 }
@@ -469,17 +510,17 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  padding: 40px 32px;
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
-  padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
-.portfolio-item:hover .portfolio-overlay {
+.portfolio-item-first:hover .portfolio-overlay {
   transform: translateY(0);
 }
 
@@ -488,31 +529,12 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin: 0;
-}
-
-.portfolio-info {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
-
-.portfolio-title {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
-.portfolio-category {
+  /* font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  margin: 0;
+  transform: translateY(0%); */
 }
+
+
 
 /* Section Title */
 .section-title {
