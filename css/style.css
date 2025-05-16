@@ -46,11 +46,11 @@ ol {
   letter-spacing: inherit;
 }
 
-button:hover,
+/* button:hover,
 button:focus {
   background-color: var(--ocean);
   color: var(--white);
-}
+} */
 
 img {
   display: block;
@@ -397,7 +397,7 @@ p {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
@@ -505,7 +505,11 @@ p {
   overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio-item-first:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -518,12 +522,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.portfolio-item-first:hover .portfolio-overlay {
-  transform: translateY(0);
-}
-
-.portfolio-overlay-text {
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
