@@ -630,6 +630,7 @@ p {
   font-weight: 500;
   border-left: 3px solid #6c757d;
   transition: color 250ms ease, transform 250ms ease;
+  margin-top: 30px;
 }
 .message:hover {
   color: #faf20b; /* Змінює колір */
