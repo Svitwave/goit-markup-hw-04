@@ -621,18 +621,3 @@ p {
 .footer-social__icon {
   fill: var(--cloud);
 }
-.message {
-  font-style: italic;
-  color: var(--cloud);
-  text-align: center;
-  text-decoration: underline;
-  font-size: 16px;
-  font-weight: 500;
-  border-left: 3px solid #6c757d;
-  transition: color 250ms ease, transform 250ms ease;
-  margin-top: 30px;
-}
-.message:hover {
-  color: #faf20b; /* Змінює колір */
-  transform: scale(1.2); /* Збільшує розмір */
-}
